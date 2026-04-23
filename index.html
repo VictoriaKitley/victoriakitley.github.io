@@ -41,7 +41,7 @@
     transition: transform 0.15s ease, width 0.2s ease, height 0.2s ease;
   }
   body:hover .cursor { opacity: 1; }
-
+ 
   /* NAV */
   nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
@@ -65,7 +65,7 @@
     transition: color 0.2s ease;
   }
   .nav-links a:hover { color: var(--green); }
-
+ 
   /* HERO */
   .hero {
     min-height: 100vh; display: flex; align-items: center;
@@ -135,7 +135,7 @@
     animation: scrollPulse 2s ease-in-out infinite;
   }
   @keyframes scrollPulse { 0%,100%{opacity:0.3} 50%{opacity:1} }
-
+ 
   /* SECTIONS */
   section { padding: 100px 48px; }
   .section-label {
@@ -148,7 +148,7 @@
     background: linear-gradient(to right, rgba(107,175,128,0.4), transparent);
   }
   .section-num { color: rgba(107,175,128,0.4); font-size: 10px; margin-right: 4px; }
-
+ 
   /* FEATURED */
   .featured { background: var(--dark2); }
   .featured-card {
@@ -178,7 +178,7 @@
     letter-spacing: 0.5px; transition: gap 0.2s ease;
   }
   .featured-link:hover { gap: 14px; }
-
+ 
   /* LONG FORM */
   .longform-grid {
     display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;
@@ -193,7 +193,7 @@
   }
   .video-card-title { font-size: 15px; font-weight: 500; margin-bottom: 6px; }
   .video-card-desc { font-size: 13px; color: var(--mid); line-height: 1.5; }
-
+ 
   /* SHORT FORM */
   .shortform { background: var(--dark2); }
   .shortform-grid {
@@ -213,7 +213,7 @@
     color: var(--green); margin-bottom: 6px;
   }
   .short-card-title { font-size: 14px; font-weight: 500; }
-
+ 
   /* TESTIMONIALS */
   .testimonials-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-bottom: 60px; }
   .tcard {
@@ -233,7 +233,7 @@
   }
   .tcard-author { font-size: 13px; font-weight: 500; color: var(--white); margin-bottom: 3px; }
   .tcard-role { font-size: 12px; color: var(--green); }
-
+ 
   /* CLIENTS */
   .clients-label { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: var(--mid); margin-bottom: 24px; }
   .clients-strip {
@@ -246,7 +246,7 @@
     transition: border-color 0.2s ease, color 0.2s ease;
   }
   .client-pill:hover { border-color: var(--green); color: var(--green); }
-
+ 
   /* ABOUT */
   .about { background: var(--dark2); }
   .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
@@ -263,7 +263,7 @@
     display: flex; align-items: center; gap: 8px;
   }
   .skill-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--green); flex-shrink: 0; }
-
+ 
   /* CONTACT */
   .contact-inner {
     max-width: 600px; margin: 0 auto; text-align: center;
@@ -284,7 +284,7 @@
     transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
   }
   .contact-link:hover { border-color: var(--green); color: var(--green); transform: translateY(-2px); }
-
+ 
   /* FOOTER */
   footer {
     padding: 24px 48px;
@@ -294,16 +294,16 @@
   .footer-left { font-size: 12px; color: var(--mid); }
   .footer-left span { color: var(--green); }
   .footer-right { font-size: 12px; color: var(--mid); }
-
+ 
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(20px); }
     to   { opacity: 1; transform: translateY(0); }
   }
-
+ 
   /* Intersection observer fade */
   .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
   .reveal.visible { opacity: 1; transform: translateY(0); }
-
+ 
   @media (max-width: 768px) {
     nav { padding: 16px 24px; }
     section { padding: 60px 24px; }
@@ -319,10 +319,10 @@
 </style>
 </head>
 <body>
-
+ 
 <div class="cursor" id="cursor"></div>
 <div class="cursor-ring" id="cursorRing"></div>
-
+ 
 <!-- NAV -->
 <nav>
   <div class="nav-logo">Victoria <span>Kitley</span></div>
@@ -332,7 +332,7 @@
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
-
+ 
 <!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-bg"></div>
@@ -355,7 +355,7 @@
     Scroll
   </div>
 </section>
-
+ 
 <!-- FEATURED: Wild Africa Fund -->
 <section class="featured" id="work">
   <div class="section-label"><span class="section-num">01</span> Featured work</div>
@@ -371,20 +371,35 @@
       <div class="featured-badge">Broadcast · Series Editor</div>
       <h2 class="featured-title">Dr. Mark's Animal Show — Wild Africa Fund</h2>
       <p class="featured-desc">
-        Children's wildlife conservation TV series. Sole editor responsible for end-to-end post-production — narrative structure, B-roll, graphics, and motion across multiple episodes. Now streaming on Showmax across Africa.
+        Children's wildlife conservation TV series. Sole editor responsible for end-to-end post-production — narrative structure, B-roll, graphics, and motion across multiple episodes. Now featured on The Africa Channel.
       </p>
-      <a href="https://www.showmax.com/za/stream/shows/dr.-marks-animal-show/db16c6df-b861-3d2f-932c-751e736fe486" target="_blank" class="featured-link">
-        Watch on Showmax →
+      <a href="https://theafricachannel.com/shows/dr-marks-animal-show/" target="_blank" class="featured-link">
+        Watch on The Africa Channel →
       </a>
     </div>
   </div>
 </section>
-
+ 
 <!-- LONG FORM -->
 <section id="longform">
   <div class="section-label"><span class="section-num">02</span> Long-form productions</div>
-  <div class="longform-grid">
-
+  <div class="longform-grid" style="grid-template-columns: repeat(2, 1fr);">
+ 
+    <div class="video-card reveal" style="grid-column: 1 / -1;">
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap:0;">
+      <iframe src="https://www.youtube.com/embed/dXWnRr31buI?rel=0&modestbranding=1"
+        title="Kolisi Foundation — Power2You Packs"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen loading="lazy" style="width:100%; aspect-ratio:16/9; border:none; display:block; background:#000;">
+      </iframe>
+      <div class="video-card-info" style="display:flex; flex-direction:column; justify-content:center; background:var(--dark3); padding:32px;">
+        <div class="video-card-type">NGO · Purpose-led Campaign</div>
+        <div class="video-card-title" style="font-size:18px; margin-bottom:10px;">Kolisi Foundation — Power2You Packs</div>
+        <div class="video-card-desc">Campaign film for the Kolisi Foundation's Power2You initiative, empowering women against gender-based violence across South Africa. Produced through Black Bean Productions.</div>
+      </div>
+      </div>
+    </div>
+ 
     <div class="video-card reveal">
       <iframe src="https://www.youtube.com/embed/pknWGIoi-yw?rel=0&modestbranding=1"
         title="Cullinan Guided Journeys"
@@ -397,7 +412,7 @@
         <div class="video-card-desc">Promotional brand film for one of South Africa's leading luxury travel companies, produced and edited for digital and web.</div>
       </div>
     </div>
-
+ 
     <div class="video-card reveal">
       <iframe src="https://www.youtube.com/embed/_0dAPurVcws?rel=0&modestbranding=1"
         title="Meet Chesnay"
@@ -410,15 +425,41 @@
         <div class="video-card-desc">Character-led documentary short, filmed and edited to capture an authentic personal story for social and digital platforms.</div>
       </div>
     </div>
-
+ 
+    <div class="video-card reveal">
+      <iframe src="https://www.youtube.com/embed/SLEUecB2-Vo?rel=0&modestbranding=1"
+        title="Plettenberg Bay Property"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen loading="lazy">
+      </iframe>
+      <div class="video-card-info">
+        <div class="video-card-type">Co-filmed & Edited · Lifestyle</div>
+        <div class="video-card-title">Plettenberg Bay Property</div>
+        <div class="video-card-desc">Cinematic property film co-filmed and edited on location in Plettenberg Bay — shot for a luxury lifestyle client.</div>
+      </div>
+    </div>
+ 
+    <div class="video-card reveal">
+      <iframe src="https://www.youtube.com/embed/jp8Ic_r0OUA?rel=0&modestbranding=1"
+        title="Natura Rescue Remedy — Worry Less, Sleep More"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen loading="lazy">
+      </iframe>
+      <div class="video-card-info">
+        <div class="video-card-type">Podcast Production · Health & Wellness</div>
+        <div class="video-card-title">Natura Rescue Remedy — Worry Less, Sleep More</div>
+        <div class="video-card-desc">Video podcast production for Natura Health, featuring Elana Afrika-Bredenkamp. Part of the Rescue Remedy awareness series for consumer health brand.</div>
+      </div>
+    </div>
+ 
   </div>
 </section>
-
+ 
 <!-- SHORT FORM -->
 <section class="shortform" id="shortform">
   <div class="section-label"><span class="section-num">03</span> Short-form &amp; social</div>
   <div class="shortform-grid">
-
+ 
     <div class="short-card reveal">
       <div class="phone-frame">
         <iframe src="https://www.youtube.com/embed/pthzKwOsGW0?rel=0&modestbranding=1"
@@ -432,7 +473,7 @@
         <div class="short-card-title">Short-form content</div>
       </div>
     </div>
-
+ 
     <div class="short-card reveal">
       <div class="phone-frame">
         <iframe src="https://www.youtube.com/embed/2gTay4X8-YQ?rel=0&modestbranding=1"
@@ -446,7 +487,7 @@
         <div class="short-card-title">Short-form content</div>
       </div>
     </div>
-
+ 
     <div class="short-card reveal">
       <div class="phone-frame">
         <iframe src="https://www.youtube.com/embed/EINx1ROo_9A?rel=0&modestbranding=1"
@@ -460,10 +501,10 @@
         <div class="short-card-title">Short-form content</div>
       </div>
     </div>
-
+ 
   </div>
 </section>
-
+ 
 <!-- TESTIMONIALS + CLIENTS -->
 <section id="testimonials">
   <div class="section-label"><span class="section-num">04</span> What clients say</div>
@@ -479,7 +520,7 @@
       <div class="tcard-role">Slingshot Media</div>
     </div>
   </div>
-
+ 
   <div class="clients-label">Selected clients</div>
   <div class="clients-strip reveal">
     <span class="client-pill">Wild Africa Fund</span>
@@ -493,7 +534,7 @@
     <span class="client-pill">Flite</span>
   </div>
 </section>
-
+ 
 <!-- ABOUT -->
 <section class="about" id="about">
   <div class="section-label"><span class="section-num">05</span> About</div>
@@ -522,7 +563,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- CONTACT -->
 <section id="contact">
   <div class="contact-inner">
@@ -532,19 +573,19 @@
       <a href="mailto:victoriakitley10@gmail.com" class="contact-link">
         ✉ victoriakitley10@gmail.com
       </a>
-      <a href="https://www.linkedin.com/in/victoriakitley" target="_blank" class="contact-link">
+      <a href="https://www.linkedin.com/in/victoria-kitley-850a4a63/" target="_blank" class="contact-link">
         in LinkedIn
       </a>
     </div>
   </div>
 </section>
-
+ 
 <!-- FOOTER -->
 <footer>
   <div class="footer-left">© 2025 <span>Victoria Kitley</span> · Cape Town</div>
   <div class="footer-right">Digital Content Producer</div>
 </footer>
-
+ 
 <script>
   // Custom cursor
   const cursor = document.getElementById('cursor');
@@ -557,7 +598,7 @@
     el.addEventListener('mouseenter', () => { cursor.style.width='6px'; cursor.style.height='6px'; ring.style.width='50px'; ring.style.height='50px'; });
     el.addEventListener('mouseleave', () => { cursor.style.width='10px'; cursor.style.height='10px'; ring.style.width='36px'; ring.style.height='36px'; });
   });
-
+ 
   // Scroll reveal
   const reveals = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver((entries) => {
@@ -569,7 +610,7 @@
     });
   }, { threshold: 0.1 });
   reveals.forEach(el => observer.observe(el));
-
+ 
   // Nav scroll shrink
   window.addEventListener('scroll', () => {
     document.querySelector('nav').style.padding = window.scrollY > 50 ? '14px 48px' : '20px 48px';
